@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./src/imagens/icone.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@100;300;500&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <title>Hora de Aventura</title>
+</head>
+<body>
+
+    
+    <div class="fundo-video">
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/trailer-hda.mp4" type="video/mp4">
+        </video>
+    </div>
+<!--Cria a linha superior onde vai ficar o cabeçalho (logo e botões)-->
+    <header class="cabecalho">
+        <a href="">
+            <img class="logo" src="./src/imagens/logo.png" alt="logo rosto do Jake">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Detalhes</a></li>
+                <li><a href="./form.html">Parceria</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Usamos a tag main para ser o caixote principal da página -->
+    <main class="container">
+        <!-- Criamos uma div para ocupar o lado esquerdo trazendo informações do conteúdo da página -->
+        <div class="informacoes">
+            <img class="imagem-titulo" src="./src/imagens/titulo.png" alt="titulo de hda">
+            <p class="descricao">Finn, o garoto humano com um chapéu incrível, e Jake, o cachorro inteligente, são amigos íntimos e parceiros em estranhas aventuras na terra do Ooo.</p>
+            <button class="botao-trailer">Veja o trailer</button>
+        </div>
+        <!-- O lado direito da página colocamos uma imagem ilustrativa -->
+        <img class="FeJ" src="./src/imagens/adventure-time-chars.png" alt="personagens de Hda">
+        <!-- Criamos uma div para alocar o vídeo do trailer da página -->
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/CMxAmnyYDLE" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

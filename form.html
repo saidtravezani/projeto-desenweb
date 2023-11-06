@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./src/imagens/icone.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@100;300;500&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <title>Hora de Aventura</title>
+</head>
+<body>
+
+    
+    <div class="fundo-video">
+        <video class="video" autoplay loop muted>
+            <source src="./src/video/trailer-hda.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <header class="cabecalho">
+        <a href="">
+            <img class="logo" src="./src/imagens/logo.png" alt="logo rosto do Jake">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Detalhes</a></li>
+                <li><a href="#">Parceria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Usamos a tag main para ser o caixote principal da página -->
+    <main class="container">
+        <!-- Criamos uma div para ocupar o lado esquerdo dando referência ao formulário do lado direito -->
+        <div class="descricao">
+            <h2 class="color">Vamos fazer um projeto juntos?</h2> <br>
+
+            <p class="color">Preencha seus dados à direita para se identificar.</p>
+    
+        </div>
+    <!-- Criamos aqui uma div para o formulário que ocupará a outra metade da página (lado direito) -->
+        <div class="FeJ">
+            <form name="formCadastro" action="cadastrar.php" method="POST" class="form">
+                <label class="color" for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Preencha o nome aqui..."> <br>
+                <label class="color" for="sobrenome">Sobrenome</label> 
+                <input type="text" id="sobrenome" name="sobrenome"> <br>
+                <label class="color" for="email">Email</label>  
+                <input type="text" id="email" name="email"> <br><br>
+    
+                <p class="color">Gostaria de receber recomendações?</p>
+                <input type="radio" id="radio1" name="radio1" value="Frontend">
+                <label class="color" for="radio1">Front-end</label> <br>
+                <input type="radio" id="radio1" name="radio1" value="Backend">
+                <label class="color" for="radio1">Back-end</label>  <br>
+                <input type="radio" id="radio1" name="radio1" value="FullStack">
+                <label class="color" for="radio1">Full Stack</label>  <br><br>
+                
+                <input class="botao-trailer" type="submit" value="Enviar" onclick="validarForm()"> 
+            </form> 
+        </div>
+
+
+
+        
+    </main>
+
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
